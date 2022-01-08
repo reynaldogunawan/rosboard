@@ -67,6 +67,7 @@ function updateStoredSubscriptions() {
       storedSubscriptions[topicName] = {
         topicType: subscriptions[topicName].topicType,
       };
+      console.log("topic: " + topicName);
     }
     window.localStorage['subscriptions'] = JSON.stringify(storedSubscriptions);
   }
