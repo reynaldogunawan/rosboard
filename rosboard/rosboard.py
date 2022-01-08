@@ -234,7 +234,7 @@ class ROSBoardNode(object):
                         callback_args = (topic_name, topic_type),
                     )
 
-                rospy.loginfo("recognized Topic: %s" % topic_name)    
+                # rospy.loginfo("recognized Topic: %s" % topic_name)    
 
             # clean up local subscribers for which remote clients have lost interest
             for topic_name in list(self.local_subs.keys()):
