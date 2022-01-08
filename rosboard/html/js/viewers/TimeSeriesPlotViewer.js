@@ -87,6 +87,7 @@ class TimeSeriesPlotViewer extends Viewer {
 
     this.uplot = new uPlot(opts, this.data, this.plotNode[0]);
     
+    // Sets the interval of the data update rate in respect to the defined size (in this case: 200ms rate with data size of 1000)
     setInterval(()=> {
       let data = [];
       if(this.data[0][this.ptr] === 0) {
@@ -102,7 +103,7 @@ class TimeSeriesPlotViewer extends Viewer {
       }
       this.uplot.setSize({width:this.plotNode[0].clientWidth, height:200});
       this.uplot.setData(data);
-    }, 100);
+    }, 200);
 
     super.onCreate();
   }
