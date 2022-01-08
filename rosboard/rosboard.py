@@ -166,8 +166,6 @@ class ROSBoardNode(object):
                     topic_type = topic_type[0] # ROS2
                 self.all_topics[topic_name] = topic_type
 
-                print(topic_name + ":" + topic_type)
-
             self.event_loop.add_callback(
                 ROSBoardSocketHandler.broadcast,
                 [ROSBoardSocketHandler.MSG_TOPICS, self.all_topics ]
