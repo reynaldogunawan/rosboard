@@ -154,7 +154,7 @@ class ROSBoardSocketHandler(tornado.websocket.WebSocketHandler):
                 return
 
             topic_name = argv[1].get("topicName")
-            print("recognized Topic: %s" % topic_name)  
+            print("recognized Topic from handler: %s" % topic_name)  
             max_update_rate = float(argv[1].get("maxUpdateRate", 24.0))
 
             self.update_intervals_by_topic[topic_name] = 1.0 / max_update_rate
