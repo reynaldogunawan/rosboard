@@ -77,7 +77,7 @@ class TimeSeriesPlotViewer extends Viewer {
       ],
     };
     
-    this.size = 2000;
+    this.size = 1000;
     this.data = [
       new Array(this.size).fill(0),
       new Array(this.size).fill(0),
@@ -102,7 +102,7 @@ class TimeSeriesPlotViewer extends Viewer {
       }
       this.uplot.setSize({width:this.plotNode[0].clientWidth, height:200});
       this.uplot.setData(data);
-    }, 200);
+    }, 100);
 
     super.onCreate();
   }
