@@ -126,7 +126,7 @@ TimeSeriesPlotViewer.supportedTypes = [
     "std_msgs/msg/Int16",
     "std_msgs/msg/Int32",
     "std_msgs/msg/Int64",
-    "std_msgs/UInt8",
+    "std_msgs/msg/UInt8",
     "std_msgs/msg/UInt16",
     "std_msgs/msg/UInt32",
     "std_msgs/msg/UInt64",
