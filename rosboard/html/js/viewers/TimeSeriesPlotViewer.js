@@ -77,7 +77,7 @@ class TimeSeriesPlotViewer extends Viewer {
       ],
     };
     
-    this.size = 1000;
+    this.size = 2000;
     this.data = [
       new Array(this.size).fill(0),
       new Array(this.size).fill(0),
