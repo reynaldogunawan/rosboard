@@ -156,7 +156,7 @@ class ROSBoardNode(object):
 
         try:
             # all topics and their types as strings e.g. {"/foo": "std_msgs/String", "/bar": "std_msgs/Int32"}
-            self.all_topics = {"/potentiometer": "std_msgs/UInt8", "/pH_water_value": "std_msgs/Float64"}
+            self.all_topics = {"/potentiometer": "std_msgs/msg/UInt8", "/pH_water_value": "std_msgs/msg/Float64"}
 
             for topic_tuple in rospy.get_published_topics():
                 topic_name = topic_tuple[0]
